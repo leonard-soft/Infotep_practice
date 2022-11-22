@@ -42,18 +42,6 @@
     <!--**********************************
         Main wrapper start
     ***********************************-->
-    <div id="main-wrapper">
-
-        <!--------- Nav header start-------------->
-        <div class="nav-header">
-            <div class="brand-logo">
-                <a href="index.php">
-                    <span class="brand-title" style="color:white;">
-                        INFOTEP WEB PRACTICE
-                    </span>
-                </a>
-            </div>
-        </div> 
         <!---------Nav header end----------------->
 
         <!--------------Header start-------------->
