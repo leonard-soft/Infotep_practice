@@ -4,6 +4,7 @@
     <div class="nav-header">
         <div class="brand-logo">
             <a href="index.php">
+                <b class="logo-abbr"><img src="images/logo.png" alt=""></b>
                 <span class="brand-title" style="color:white;">
                     INFOTEP WEB PRACTICE
                 </span>
@@ -161,7 +162,7 @@
             <li class="icons dropdown">
                 <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                     <span class="activity active"></span>
-                    <img src="images/user/1.png" height="40" width="40" alt="">
+                    <img src="../img/user.png" height="40" width="40" alt="">
                 </div>
                 <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
                     <div class="dropdown-content-body">
