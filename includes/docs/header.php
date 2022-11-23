@@ -95,12 +95,16 @@
                             </ul>
                         </div>
                       </li>
-                    </div>
+                    </ul>
+                </div>
                 <!--fin de imagen y menu del perfil-->
 
-        </div>
+         
         <!--fin_info_usuario-->
 
-    </div>
- </div>
+     </div>
+
+</div>
+
+</div>
  <!--finHeader-->
