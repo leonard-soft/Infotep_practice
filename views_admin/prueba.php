@@ -1,6 +1,7 @@
-<?php 
-    include "session.php";
+<?php  
+ include '../models/models_admin.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -23,6 +24,8 @@
     <!-- Custom Stylesheet -->
     <link href="../includes/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="../img/infoteplogo.png">
+    <!--scripts-->
+    <script type="text/javascript" src="../includes/js/jquery-migrate-3.4.0.js"></script>
 
 </head>
 
@@ -81,7 +84,7 @@
                                                
                                         <div class="form-group">
                                             <label class = "text-dark"><strong>ingresar nombre para el usuario</strong></label>
-                                            <input type="text" class="form-control input-default" placeholder="nombre">
+                                            <input id="txt_nombre" name="txt_nombre" type="text" class="form-control input-default" placeholder="nombre">
                                         </div>
 
                                         <div class="form-group">
@@ -111,7 +114,7 @@
 
 
                                         <div class="form-group">
-                                            <input type="submit" class="btn btn-success" value="Enviar">
+                                            <button id="button-next" class="btn btn-success" onclick="validar()">Enviar</button>
                                         </div>
 
                                     </form>
@@ -167,6 +170,20 @@
     <script src="../includes/plugins/chartist/js/chartist.min.js"></script>
     <script src="../includes/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
     <script src="../includes/js/dashboard/dashboard-1.js"></script>
+     
+    <script type="text/javascript">
+        
+     function validar(){
+     var formdata = 7;
+
+     if($("#txt_nombre").val().length() > 0) {formdata = formdata - 1;} else {$("#txt_nombre").addClass("as invalid");}
+     if(formdata == 0 ){
+        $("")
+     }
+
+    }
+
+    </script>
 
 </body>
 
