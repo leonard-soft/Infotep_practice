@@ -94,17 +94,17 @@
 
                             </ul>
                         </div>
-                      </li>
-                    </ul>
-                </div>
-                <!--fin de imagen y menu del perfil-->
+                    </li>
+                </ul>
+            </div>
+            <!--fin de imagen y menu del perfil-->
 
-         
-        <!--fin_info_usuario-->
+            
+            <!--fin_info_usuario-->
 
-     </div>
+        </div>
 
-</div>
+    </div>
 
 </div>
  <!--finHeader-->
