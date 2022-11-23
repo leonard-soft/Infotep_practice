@@ -35,7 +35,7 @@
                 
                 <div class="drop-down animated flipInX d-md-none">
                   <form action="#">
-                    <input type="text" class="form-control" placeholder="Search">
+                     <input type="text" class="form-control" placeholder="Search">
                   </form>
             </div>
         </div>
