@@ -7,7 +7,7 @@
                         <i class="fa-solid fa-book"></i><span class="nav-text">Inicio</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./index.html">Home 1</a></li>
+                            <li><a href="../views_admin/prueba.php">Registrar Usuarios</a></li>
                             <!-- <li><a href="./index-2.html">Home 2</a></li> -->
                         </ul>
                     </li>
