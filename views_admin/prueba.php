@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"> 
     <!-- theme meta -->
     <meta name="theme-name" content="Infotep" />
-    <title>Plantilla</title>
+    <title>Usuarios Registrar</title>
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/4fc40aa7f8.js" crossorigin="anonymous"></script>
@@ -66,24 +66,51 @@
 
         <!---------Content body start-------------->
         <div class="content-body">
-          <div class="container-fluid mt3">
+          <div class="container-fluid mt2">
             <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-8">
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Input Style</h4>
-                                <p class="text-muted m-b-15 f-s-12">Use the input classes on an <code>.input-default, input-flat, .input-rounded</code> for Default input.</p>
+                            <div class="card-body bg-secondary rounded">
+                                <h4 class="card-title">Crear Nuevo Perfil</h4>
+                                <p class="text-dark m-b-15 f-s-12">aqui podras crear un nuevo perfil para tus usuarios.</p>
                                 <div class="basic-form">
-                                    <form>
+                                    <form> <br>
+                                               
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-default" placeholder="Input Default">
+                                            <label class = "text-dark"><strong>ingresar nombre para el usuario</strong></label>
+                                            <input type="text" class="form-control input-default" placeholder="nombre">
                                         </div>
+
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-flat" placeholder="Input Flat ">
+                                             <label class = "text-dark"><strong>ingresar un correo para el usuario</strong></label>
+                                             <input type="text" class="form-control input-default" placeholder="Correo">
                                         </div>
+
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-rounded" placeholder="Input Rounded">
+                                              <label class = "text-dark"><strong>ingresar un telefono para el usuario</strong></label>
+                                            <input type="text" class="form-control input-default" placeholder="telefono">
                                         </div>
+
+                                        <div class="form-group">
+                                              <label class = "text-dark"><strong>ingresar la direccion donde vive el usuario</strong></label>
+                                            <input type="text" class="form-control input-default" placeholder="Calle example #23-100">
+                                        </div>
+
+                                        <div class="form-group">
+                                              <label class = "text-dark"><strong>ingresar un usuario</strong></label>
+                                            <input type="text" class="form-control input-default" placeholder="Usuario">
+                                        </div>
+
+                                        <div class="form-group">
+                                              <label class = "text-dark"><strong>ingresar una contraseña</strong></label>
+                                            <input type="text" class="form-control input-default" placeholder="Contraseña">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-success" value="Enviar">
+                                        </div>
+
                                     </form>
                                 </div>
                             </div>
