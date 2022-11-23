@@ -26,7 +26,9 @@
 
              <!--icono de buscador e input-->
              <div class="header-left">
+
                <div class="input-group icons">
+
                  <div class="input-group-prepend">
                     <a class="input-group-text bg-transparent border-0 pr-2 pr-sm-3 btn btn-info" id="basic-addon1">
                         <i class="fa-solid fa-search"></i>
@@ -35,10 +37,12 @@
               
                  <div class="drop-down animated flipInX d-md-none">
                    <form action="#">
-                      <input type="text" class="form-control" placeholder="Search">
+                      <input type="text" class="form-control" placeholder="Buscar">
                    </form>
                  </div>
-               </div>
+
+               
+
              </div>
              <!--icono de buscador e input-->
           
