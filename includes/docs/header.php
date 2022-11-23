@@ -37,7 +37,7 @@
                             <input type="text" class="form-control" placeholder="Search">
                         </form>
                     </div>
-                </div>
+                 </div>
             </div>
             <!--icono de buscador e input--> 
 
