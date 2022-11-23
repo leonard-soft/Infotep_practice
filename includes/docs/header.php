@@ -57,7 +57,7 @@
 
                         <li class="icons dropdown d-none d-md-flex">
                             <a href="javascript:void(0)" class="log-user"  data-toggle="dropdown">
-                                <span>Username</span>  
+                                <span>Bienvenido, <?php echo $_SESSION['nombre'];?>!</span>  
                             </a>
                         </li>
 
@@ -78,7 +78,7 @@
 
                                        
                                         <li>
-                                            <a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a>
+                                            <a href="logout.php"><i class="icon-key"></i> <span>Cerrar sesión</span></a>
                                         </li>
                                     </ul>
                                 </div>

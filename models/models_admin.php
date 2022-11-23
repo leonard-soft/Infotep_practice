@@ -15,7 +15,7 @@ class DBConfig {
         $this->error = true;
     }
 	
-	function conexion($host='localhost',$user='root',$pass='12345678',$db='db_ferney'){  // connection function
+	function conexion($host='localhost',$user='root',$pass='12345678',$db='db_admin'){  // connection function
 	    $this->error_message = "";
         $this->host = $host;
         $this->user = $user;

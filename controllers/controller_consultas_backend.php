@@ -87,7 +87,12 @@ class ExtraerDatos extends ConsultasDB
 		$lista = $this->consulta_generales($sql);	
 		return $lista;
 	}
-	
+	// INICIO DE SESIÓN
+	function IniciarSesion($usuario, $contrasena){
+		$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' and contrasena='$contrasena' ";
+		$lista = $this->consulta_generales($sql);	
+		return $lista;
+	}
 }//fin CLASE
 
 ?>
