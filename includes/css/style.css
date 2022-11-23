@@ -54,6 +54,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .gradient-anchor {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important; }
+.bg-image
+{
+  background-image: url("../../img/infoteplogo.png") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
