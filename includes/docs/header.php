@@ -24,7 +24,6 @@
              <!--fin menu hamburguesa-->
 
 
-           
              <!--icono de buscador e input-->
              <div class="header-left">
                  <div class="input-group icons">
@@ -37,11 +36,12 @@
                 <div class="drop-down animated flipInX d-md-none">
                  <form action="#">
                     <input type="text" class="form-control" placeholder="Search">
-                </form>
+                 </form>
             </div>
         </div>
     </div>
     <!--icono de buscador e input--> 
+           
 
           
 
