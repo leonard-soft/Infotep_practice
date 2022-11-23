@@ -41,14 +41,14 @@
                    </form>
                  </div>
 
-               
+              </div>
 
              </div>
              <!--icono de buscador e input-->
           
 
-            <!--info_usuario-->
-            <div class="header-right">
+             <!--info_usuario-->
+             <div class="header-right">
               <ul class="clearfix">
 
 
