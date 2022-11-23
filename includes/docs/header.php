@@ -10,6 +10,8 @@
             </a>
         </div>
     </div> 
+    <!-- Fin Nav Header --------------->
+
 
     <!--header-->
     <div class="header">    
@@ -18,7 +20,9 @@
             <!--menu hamburguesa-->
             <div class="nav-control">    
                 <div class="hamburger">
-                    <span class="toggle-icon"><i class="fa-solid fa-bars"></i></span>
+                    <span class="toggle-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
                 </div>     
             </div>
             <!--fin menu hamburguesa-->
@@ -82,27 +86,21 @@
 
 
                                 <li>
-                                    <a href="page-login.html"><i class="icon-key"></i> <span>Salir</span></a>
+                                    <a href="page-login.html">
+                                        <i class="icon-key"></i> 
+                                        <span>Salir</span>
+                                    </a>
                                 </li>
 
                             </ul>
                         </div>
+                      </li>
                     </div>
-                </li>
                 <!--fin de imagen y menu del perfil-->
 
-            </ul>
         </div>
         <!--fin_info_usuario-->
 
     </div>
  </div>
  <!--finHeader-->
-
-</div>
-
-</div>
-
-</div>
-
-
