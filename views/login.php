@@ -39,10 +39,10 @@
 
                                     <form class="mt-5 mb-5 login-input">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Usuario">
+                                            <input type="text" class="form-control" placeholder="Usuario" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Contraseña">
+                                            <input type="password" class="form-control" placeholder="Contraseña" required>
                                         </div>
                                         <button class="btn login-form__btn submit w-100">Iniciar sesión</button>
                                     </form>
