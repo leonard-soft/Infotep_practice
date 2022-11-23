@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../includes/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="../includes/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="../img/infoteplogo.png">
 
 </head>
 
