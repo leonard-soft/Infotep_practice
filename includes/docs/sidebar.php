@@ -16,7 +16,7 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="../views_admin/mantenimiento_historial.php">Listado</a></li>
-                    <li><a href="../views_admin/prueba.php">Nuevo</a></li>
+                    <!-- <li><a href="../views_admin/prueba.php">Nuevo</a></li> -->
                 </ul>
             </li>
         </ul>

@@ -79,8 +79,9 @@ include "session.php";
                                     <table class="table table-xs mb-0">
                                         <thead>
                                             <tr>
-                                                <th rowspan="2">Codigo de PC</th>
-                                                <th colspan="2">Fecha de Mantenimiento</th>
+                                                <th style="width: 120px;">Codigo PC</th>
+                                                <th style="width: 60px;">Fecha Inicio</th>
+                                                <th style="width: 60px;">Fecha Final</th>
                                                 <th>Tipo Mantenimiento</th>
                                                 <th>Ubicación</th>
                                                 <th>Problemas</th>
@@ -89,116 +90,26 @@ include "session.php";
                                                 <th>Responsable</th>
                                                 <th>Estado Final</th>
                                             </tr>
-                                            <tr>
-                                                <th>Inicio</th>
-                                                <th>Final</th>
-                                            </tr>
                                         </thead>
                                         <tbody>
+                                            <?php 
+                                            for ($i=0; $i < 10; $i++) { 
+                                            ?>
                                             <tr>
-                                                <td><img src="./images/avatar/1.jpg" class=" rounded-circle mr-3" alt="">Sarah Smith</td>
-                                                <td>iPhone X</td>
-                                                <td>
-                                                    <span>United States</span>
-                                                </td>
-                                                <td>
-                                                    <div>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar bg-success" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><i class="fa fa-circle-o text-success  mr-2"></i> Paid</td>
-                                                <td>
-                                                    <span>Last Login</span>
-                                                    <span class="m-0 pl-3">10 sec ago</span>
-                                                </td>
+                                                <td>SisLab03-PC05</td>
+                                                <td>26/09/2022</td>
+                                                <td>26/09/2022</td>
+                                                <td>Correctivo</td>
+                                                <td>Laboratorio_4</td>
+                                                <td>Daño en la fuente de Poder</td>
+                                                <td>Un corte eléctrico en la fuente de poder</td>
+                                                <td>Se realizó la  instalación de la fuente en el pc-05 del laboratorio 03.</td>
+                                                <td>Leonardo Bermudez, Windis Melo, David Niebles y Juan Nontien.</td>
+                                                <td>Funcionando Correctamente </td>
                                             </tr>
-                                            <tr>
-                                                <td><img src="./images/avatar/2.jpg" class=" rounded-circle mr-3" alt="">Walter R.</td>
-                                                <td>Pixel 2</td>
-                                                <td><span>Canada</span></td>
-                                                <td>
-                                                    <div>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar bg-success" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><i class="fa fa-circle-o text-success  mr-2"></i> Paid</td>
-                                                <td>
-                                                    <span>Last Login</span>
-                                                    <span class="m-0 pl-3">50 sec ago</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="./images/avatar/3.jpg" class=" rounded-circle mr-3" alt="">Andrew D.</td>
-                                                <td>OnePlus</td>
-                                                <td><span>Germany</span></td>
-                                                <td>
-                                                    <div>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar bg-warning" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><i class="fa fa-circle-o text-warning  mr-2"></i> Pending</td>
-                                                <td>
-                                                    <span>Last Login</span>
-                                                    <span class="m-0 pl-3">10 sec ago</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="./images/avatar/6.jpg" class=" rounded-circle mr-3" alt=""> Megan S.</td>
-                                                <td>Galaxy</td>
-                                                <td><span>Japan</span></td>
-                                                <td>
-                                                    <div>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar bg-success" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><i class="fa fa-circle-o text-success  mr-2"></i> Paid</td>
-                                                <td>
-                                                    <span>Last Login</span>
-                                                    <span class="m-0 pl-3">10 sec ago</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="./images/avatar/4.jpg" class=" rounded-circle mr-3" alt=""> Doris R.</td>
-                                                <td>Moto Z2</td>
-                                                <td><span>England</span></td>
-                                                <td>
-                                                    <div>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar bg-success" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><i class="fa fa-circle-o text-success  mr-2"></i> Paid</td>
-                                                <td>
-                                                    <span>Last Login</span>
-                                                    <span class="m-0 pl-3">10 sec ago</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="./images/avatar/5.jpg" class=" rounded-circle mr-3" alt="">Elizabeth W.</td>
-                                                <td>Notebook Asus</td>
-                                                <td><span>China</span></td>
-                                                <td>
-                                                    <div>
-                                                        <div class="progress" style="height: 6px">
-                                                            <div class="progress-bar bg-warning" style="width: 50%"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><i class="fa fa-circle-o text-warning  mr-2"></i> Pending</td>
-                                                <td>
-                                                    <span>Last Login</span>
-                                                    <span class="m-0 pl-3">10 sec ago</span>
-                                                </td>
-                                            </tr>
+                                            <?php
+                                            }
+                                            ?>
                                         </tbody>
                                     </table>
                                 </div>
