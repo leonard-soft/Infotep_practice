@@ -24,11 +24,11 @@
             ***********************************-->
             <div class="header">    
                 <div class="header-content clearfix">
-                    
+
                     <!--menu hamburguesa-->
                     <div class="nav-control">
                         <div class="hamburger">
-                            <span class="toggle-icon"><i class="fa-solid fa-list"></i></span>
+                            <span class="toggle-icon"><i class="fa-solid fa-bars"></i></span>
                         </div>
                     </div>
                     <!--fin menu hamburguesa-->
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <!--formulario de busqueda-->
-                    
+
                     <!--cierre de sesion-->
                     <div class="header-right">
                         <ul class="clearfix">
@@ -73,10 +73,10 @@
                                             <li>
                                                 <a href="app-profile.html"><i class="icon-user"></i> <span>Perfil</span></a>
                                             </li>
-                                            
+
                                             <hr class="my-2">
 
-                                            
+
                                             <li>
                                                 <a href="logout.php"><i class="icon-key"></i> <span>Cerrar sesión</span></a>
                                             </li>
