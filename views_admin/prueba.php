@@ -1,5 +1,6 @@
 <?php  
 include '../models/models_admin.php';
+include "session.php";
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +46,7 @@ include '../models/models_admin.php';
         Preloader end
         ********************-->
 
-        
+
     <!--**********************************
         Main wrapper start
         ***********************************-->
@@ -81,7 +82,7 @@ include '../models/models_admin.php';
                             <p class="text-dark m-b-15 f-s-12">aqui podras crear un nuevo perfil para tus usuarios.</p>
                             <div class="basic-form">
                                 <form> <br>
-                                 
+
                                     <div class="form-group">
                                         <label class = "text-dark"><strong>ingresar nombre para el usuario</strong></label>
                                         <input id="txt_nombre" name="txt_nombre" type="text" class="form-control input-default" placeholder="nombre">
@@ -170,9 +171,9 @@ include "../includes/docs/footer.php";
         <script src="../includes/plugins/chartist/js/chartist.min.js"></script>
         <script src="../includes/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
         <script src="../includes/js/dashboard/dashboard-1.js"></script>
-        
+
         <script type="text/javascript">
-            
+
            function validar(){
                var formdata = 7;
 
