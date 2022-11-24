@@ -81,7 +81,7 @@ include "session.php";
                             <h4 class="card-title">Crear Nuevo Perfil</h4>
                             <p class="text-dark m-b-15 f-s-12">aqui podras crear un nuevo perfil para tus usuarios.</p>
                             <div class="basic-form">
-                                <form> <br>
+                                <form action="./prueba.php" method="post"> <br>
 
                                     <div class="form-group">
                                         <label class = "text-dark"><strong>ingresar nombre para el usuario</strong></label>
@@ -90,32 +90,32 @@ include "session.php";
 
                                     <div class="form-group">
                                        <label class = "text-dark"><strong>ingresar un correo para el usuario</strong></label>
-                                       <input type="text" class="form-control input-default" placeholder="Correo">
+                                       <input id="txt_email" name="txt_email" type="text" class="form-control input-default" placeholder="Correo">
                                    </div>
 
                                    <div class="form-group">
                                       <label class = "text-dark"><strong>ingresar un telefono para el usuario</strong></label>
-                                      <input type="text" class="form-control input-default" placeholder="telefono">
+                                      <input id="txt_num" name="txt_num" type="text" class="form-control input-default" placeholder="telefono">
                                   </div>
 
                                   <div class="form-group">
                                       <label class = "text-dark"><strong>ingresar la direccion donde vive el usuario</strong></label>
-                                      <input type="text" class="form-control input-default" placeholder="Calle example #23-100">
+                                      <input id="txt_dir" name="txt_dir" type="text" class="form-control input-default" placeholder="Calle example #23-100">
                                   </div>
 
                                   <div class="form-group">
                                       <label class = "text-dark"><strong>ingresar un usuario</strong></label>
-                                      <input type="text" class="form-control input-default" placeholder="Usuario">
+                                      <input id="txt_user" name="txt_user" type="text" class="form-control input-default" placeholder="Usuario">
                                   </div>
 
                                   <div class="form-group">
                                       <label class = "text-dark"><strong>ingresar una contraseña</strong></label>
-                                      <input type="text" class="form-control input-default" placeholder="Contraseña">
+                                      <input id="txt_pass" name="txt_pass" type="text" class="form-control input-default" placeholder="Contraseña">
                                   </div>
 
 
                                   <div class="form-group">
-                                    <button id="button-next" class="btn btn-success" onclick="validar()">Enviar</button>
+                                    <button type="submit" id="button-next" class="btn btn-success">Enviar</button>
                                 </div>
 
                             </form>
@@ -172,19 +172,32 @@ include "../includes/docs/footer.php";
         <script src="../includes/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
         <script src="../includes/js/dashboard/dashboard-1.js"></script>
 
-        <script type="text/javascript">
+         <?php
+                if (isset($_POST["txt_nombre"])){
+                  $nombre = $_POST["txt_nombre"];
+                  $email = $_POST["txt_email"];
+                  $telefono = $_POST["txt_num"];
+                  $dir = $_POST["txt_dir"];
+                  $user = $_POST["txt_user"];
+                  $pass = $_POST["txt_pass"];
 
-           function validar(){
-               var formdata = 7;
+                  $objDBO = new DBconfig();
+                  $objDBO->config();
+                  $objDBO->conexion();
 
-               if($("#txt_nombre").val().length() > 0) {formdata = formdata - 1;} else {$("#txt_nombre").addClass("as invalid");}
-               if(formdata == 0 ){
-                $("")
-            }
+                  $ejecucion = $objDBO->Operaciones("INSERT INTO usuarios(nombre,correo,telefono,direccion,usuario,contrasena) VALUES('$nombre','$email','$telefono','$dir', '$user','$pass')");
 
-        }
-
-    </script>
+                  if($ejecucion){ // Todo se ejecuto correctamente
+                  echo "<div class='alert alert-success'>
+                          Datos registrados correctamente
+                        </div>";
+                  }else{ // Algo paso mal
+                  echo "<div class='alert alert-danger'>
+                          Ha ocurrido un error inexperado 
+                        </div>";
+                       }
+                }
+              ?>
 
 </body>
 
