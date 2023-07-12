@@ -7,5 +7,5 @@
 ## steps for installation
 
 <ul>
-  <li>install the toolkit to run php code, you can use <a href="https://www.apachefriends.org/download.html">XAMPP</a>, <a href="https://www.appserv.org/en/">appServ</a> or any other php toolkit.</li>
+  <li> Download the toolkit to run php code, you can use <a href="https://www.apachefriends.org/download.html">XAMPP</a>, <a href="https://www.appserv.org/en/">appServ</a> or any other php toolkit.</li>
 </ul>
