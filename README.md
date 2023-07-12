@@ -8,4 +8,5 @@
 
 <ul>
   <li> Download the toolkit to run php code, you can use <a href="https://www.apachefriends.org/download.html">XAMPP</a>, <a href="https://www.appserv.org/en/">appServ</a> or any other php toolkit.</li>
+  <li>The next step is to install the tool packages, for this you can find a tutorial to install them by clicking the following links:</li>
 </ul>
