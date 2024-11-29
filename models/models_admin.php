@@ -1,29 +1,36 @@
 <?php
 
+/*
+ * this is a class to connect a the application with the database server
+ * the principal technology is PDO Object.
+*/
 class DBConfig {
 
-    var $host;
-    var $user;
-    var $pass;
-    var $db;
-    var $db_link;
-    var $conn = false;
-    public $error = false;
-	public $error_message;
+	var $host;
+    	var $user;
+    	var $pass;
+    	var $db;
+    	var $db_link;
+    	var $conn = false;
+    	public $error = false;
+    	public $error_message;
 
-    public function config(){ // class config
-        $this->error = true;
-    }
-	
-	function conexion($host='localhost',$user='root',$pass='12345678',$db='db_admin'){  // connection function
-	    $this->error_message = "";
-        $this->host = $host;
-        $this->user = $user;
-        $this->pass = $pass;
-        $this->db = $db;
+    	public function config(){
+        	$this->error = true;
+    	}
+
+	/*
+ 	*  bad name in the fuction 'conexion' break the code conventions and is a bad practice
+  	*  because create a 'spanglish' ecosystem and add inneccesary dificulty.
+  	*/
+	function conexion($host='localhost',$user='root',$pass='12345678',$db='db_admin'){ 
+	    	$this->error_message = "";
+        	$this->host = $host;
+        	$this->user = $user;
+        	$this->pass = $pass;
+        	$this->db = $db;
 		$this->error_message = "";
-        
-        try{	
+        	try{	
 			$this->db_link = new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user, $this->pass);
 			$this->db_link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$this->conn = true;
@@ -33,8 +40,13 @@ class DBConfig {
 			echo $exception->getMessage();
 			$this->error_message =$exception->getMessage();			
 		} 
-    }
-	
+    	}
+
+	/*
+ 	*  bad name in the fuction 'Consultas' break the code conventions and is a bad practice
+  	*  because create a 'spanglish' ecosystem and add inneccesary dificulty. so and use Pascal Case
+   	*  this code hasn't good practice and conteins variables without significative names.
+  	*/
 	public function Consultas($Query){
 		$this->error_message = "";
 		$this->rowsCant =0;
@@ -42,12 +54,14 @@ class DBConfig {
 		try{
 			if ($sql->execute()){
 				$sql->setFetchMode(PDO::FETCH_ASSOC);		
-				$records_query = $sql->fetchAll();//echo json_encode( $sql->fetchAll()  );
+				$records_query = $sql->fetchAll();
 				$this->rowsCant = $sql->rowCount();
-				if($sql->rowCount()>0)
+				if($sql->rowCount()>0) {
 					return $records_query;	
-				else
+				}
+				else {
 					return false;
+				}
 			}else{
 				$this->error_message = "-captura manual del error".$this->error_message;
 				return false;
@@ -56,39 +70,41 @@ class DBConfig {
 			$this->error_message =$exception->getMessage();
 		}
 	}
-	
+
+	/*
+ 	*  More spanglish 'Operaciones'
+  	*/
 	function Operaciones($Query){
 		$this->error_message = "";
-	    $sql = $this->db_link->prepare($Query);	
-	    /*$sql = "INSERT INTO mascotas
-          (nombre, tipo, raza, edad)
-          VALUES
-          (:title, :status, :content, :user_id)";
-	    bindAllValues($statement, $input);    */
-	    //$sql->execute();
-	    try{
+	    	$sql = $this->db_link->prepare($Query);	
+	    	try{
 			if ($sql->execute()){
-		    	return true;
-		    }else{
-		    	return false;
-		    }
-	    }catch(PDOException $exception){
+		    		return true;
+		    	}else{
+		    		return false;
+		    	}
+	    	}catch(PDOException $exception){
 			$this->error_message =$exception->getMessage();
 		}	    
 	}	
 
+	/*
+ 	*  bad name in the fuction 'numero_de_filas' break the code conventions and is a bad practice
+  	*  because create a 'spanglish' ecosystem and add inneccesary dificulty.
+  	*/
 	function numero_de_filas(){
 		return $this->rowsCant;
 	}
 
-    function close() { // close connection
-        if ($this->conn){ // check connection
-        	$this->db_link = null;
-            $this -> conn = false;
-        }
-    }
+	/*
+ 	*  this is the unic function that has a good practice and follow the code conventions for php.
+  	*/
+    	function close() { 
+        	if ($this->conn){
+        		$this->db_link = null;
+            		$this -> conn = false;
+        	}
+    	}
 				
-}//FIN CLASE DATABASE
-
-
+}
 ?>
