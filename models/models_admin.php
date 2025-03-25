@@ -1,8 +1,8 @@
 <?php
 
 /*
- * this is a class to connect a the application with the database server
- * the principal technology is PDO Object.
+ * this is a class to connect the application with the database server
+ * the main technology is PDO Object.
 */
 class DBConfig {
 
